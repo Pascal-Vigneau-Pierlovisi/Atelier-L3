@@ -11,25 +11,22 @@ def rangerVitrine(liste_objet:list, nb_emplacements:int)->bool:
     """
     ranger = True
     limit = nb_emplacements
-    nb_item_objet_reparti = ceil((len(liste_objet))/2)
 
+    for i in liste_objet:
+        if len(vitrine_magasin) - 1 != limit or len(vitrine_secours) - 1 != limit:
 
-    if(nb_item_objet_reparti > limit):
-
-        ranger = False
-
-    else:
-        for i in liste_objet:
-            if len(vitrine_magasin) - 1 == limit and len(vitrine_secours) - 1 == limit:
-                ranger = False
-            else:
-                if i not in vitrine_magasin:
+            if i not in vitrine_magasin or i not in vitrine_secours:
+                if i not in vitrine_magasin and len(vitrine_magasin) - 1 < limit:
                     vitrine_magasin.append(i)
                 else:
-                    if i not in vitrine_secours:
+                    if i not in vitrine_secours and len(vitrine_secours) -1 < limit:
                         vitrine_secours.append(i)
+            else:
+                ranger = False
+        else:
+            ranger = False
 
-    print(len(vitrine_magasin))
+
 
     return ranger
 
@@ -38,11 +35,17 @@ def rangerVitrine(liste_objet:list, nb_emplacements:int)->bool:
 if __name__ == '__main__':
     print("------------RANGER VITRINE------------")
 
-    liste_objets = [1, 1, 1, 1, 5, 7, 9, 9, 9, 10, 11]
+    liste_objets = [1, 1, 2, 3, 4, 6, 7, 8, 9, 10]
     vitrine_magasin = []
     vitrine_secours = []
 
-    print(rangerVitrine(liste_objets, 5))
+    print()
+
+    if(rangerVitrine(liste_objets, 4)):
+        print("Tous les éléments ont pu être rangé !")
+
+    else:
+        print("Pas tous les éléments ont pu être rangé :c")
 
     print(vitrine_magasin)
     print(vitrine_secours)
