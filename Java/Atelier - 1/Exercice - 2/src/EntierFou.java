@@ -1,6 +1,6 @@
 import java.util.Random;
 
-public class EntierFou extends ManipEntiers{
+public class EntierFou extends Entier{
 
     private Random r = new Random();
     protected Integer niveauFolie;

@@ -1,8 +1,4 @@
-import org.jetbrains.annotations.NotNull;
-
-import java.util.Objects;
-
-public class ManipEntiers {
+public class Entier {
 
     public Integer getNumber() {
         return number;
@@ -19,9 +15,9 @@ public class ManipEntiers {
      * @param max Représente la valeur maximale qui va être utilisée pour générer le nombre
      * @param number Représente la valeur que l'on souhaite affecter à number
      */
-    public ManipEntiers(Integer min, Integer max, Integer number){
+    public Entier(Integer min, Integer max, Integer number){
         if(min<number && number>max){
-            this.number = 0;
+            this.number = min;
         }
         else{
             this.number = number;
@@ -37,10 +33,8 @@ public class ManipEntiers {
      * @param min Représente la valeur minimum qui va être utilisée pour générer le nombre
      * @param max Représente la valeur maximale qui va être utilisée pour générer le nombre
      */
-    public ManipEntiers(Integer min, Integer max){
-        this.min = min;
-        this.max = max;
-        number = 0;
+    public Entier(Integer min, Integer max){
+        this(min, max, min);
     }
 
     /**
@@ -91,9 +85,13 @@ public class ManipEntiers {
      * @param entierToCompare Objet qui va être comparé avec celui qui est utilisé dans l'appel de la méthode
      * @return La valeur de retour est un Booléen qui représente le fait de l'égalité des attributs des 2 objets
      */
-    public Boolean equals(@NotNull ManipEntiers entierToCompare){
-        return(Objects.equals(number, entierToCompare.number) && Objects.equals(min, entierToCompare.min)
-                && Objects.equals(max, entierToCompare.max));
+    public boolean equals(Object entierToCompare){
+        if(entierToCompare instanceof Entier){
+            Entier autre = (Entier)entierToCompare;
+            return(number == autre.number && min == autre.min && max == autre.max);
+        }
+        return false;
+
     }
 
 }
