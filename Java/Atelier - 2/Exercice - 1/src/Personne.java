@@ -152,6 +152,23 @@ public class Personne{
 		return result;
 	}
 
+	/**
+	 * Fonction getAge()
+	 * @return La valeur de retour est un int représentant l'âge de la personne
+	 */
+	static int getAge(GregorianCalendar cal){
+		Calendar maintenant = new GregorianCalendar();
+		int age = maintenant.get(Calendar.YEAR) - cal.get(Calendar.YEAR);
+		if ((cal.get(Calendar.MONTH) > maintenant.get(Calendar.MONTH))
+				|| (cal.get(Calendar.MONTH) == maintenant.get(Calendar.MONTH) && cal.get(Calendar.DAY_OF_MONTH) > maintenant
+				.get(Calendar.DAY_OF_MONTH)))
+		{
+			age--;
+		}
+
+		return age;
+	}
+
 	/* (non-Javadoc)
 	 * @see java.lang.Object#toString()
 	 */
