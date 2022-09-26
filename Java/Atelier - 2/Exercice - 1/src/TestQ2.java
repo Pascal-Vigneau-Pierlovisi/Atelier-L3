@@ -15,13 +15,13 @@ public class TestQ2 {
         // --------- TEST MANAGER -------------------------
         Manager m1 = Manager.createManager("Pierlovisi", "Pascal", 29, 4, 2002, 1,
                 "rue des potiers", "20250", "Corte", 1200, 22, 9, 2001);
-        Manager m2 = Manager.createManager("Alpha", "Pascal", 29, 4, 2002, 1,
+        Manager m2 = Manager.createManager("Alpha", "Paul", 29, 4, 2002, 1,
                 "rue des potiers", "20250", "Corte", 1200, 22, 9, 2002);
-        Manager m3 = Manager.createManager("Bravo", "Pascal", 29, 4, 2002, 1,
+        Manager m3 = Manager.createManager("Bravo", "Donovan", 29, 4, 2002, 1,
                 "rue des potiers", "20250", "Corte", 1200, 22, 9, 2011);
-        Manager m4 = Manager.createManager("Charli", "Pascal", 29, 4, 2002, 1,
+        Manager m4 = Manager.createManager("Charli", "Henry", 29, 4, 2002, 1,
                 "rue des potiers", "20250", "Corte", 1200, 22, 9, 2020);
-        Manager m5 = Manager.createManager("Delta", "Pascal", 29, 4, 2002, 1,
+        Manager m5 = Manager.createManager("Delta", "David", 29, 4, 2002, 1,
                 "rue des potiers", "20250", "Corte", 1200, 22, 9, 2001);
 
         System.out.println(m1.toString());
@@ -30,8 +30,8 @@ public class TestQ2 {
         // ------------------------------------------------
 
         // --------- TEST SECRETAIRE -------------------------
-        Secretaire s1 = Secretaire.createSecretaire("Karamani", "Laetitia", 17, 3, 1983, 1,
-                "Résidence Élisa lieu dit U lagu", "20290", "Lucciana", 1200, 22, 9, 2020);
+        Secretaire s1 = Secretaire.createSecretaire("Echo", "Claire", 17, 3, 1983, 1,
+                "Rue des potiers", "91000", "Paris", 1200, 22, 9, 2020);
         System.out.println(s1.toString());
         m1.setSecretaire(s1);
         m2.setSecretaire(s1);
