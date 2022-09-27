@@ -3,9 +3,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.*;
 public class De {
 
-    private static Random r = new Random();  // Création d'un objet du type Random
+    protected static Random r = new Random();  // Création d'un objet du type Random
     static Integer nbDe = 0;  // Nombre de Dé crées qui va s'incrémenté par la suite
-
     public String getName() {
         return name;
     }  // Access au nom du dé
@@ -117,8 +116,15 @@ public class De {
         return String.format("Nom du Dé : %s | Nombre de faces : %d", this.name, this.nbFaces);
     }
 
-    public Boolean equals(@NotNull De De2){
-        return (this.name == De2.getName() && this.nbFaces == De2.nbFaces);
+    public boolean equals(Object De2){
+        boolean res = false;
+        if(De2 instanceof De){
+            De theDe = (De)De2;
+            if(theDe.getName().equals(name) && nbFaces == theDe.getNbFaces()){
+                res = true;
+            }
+        }
+        return res;
     }
 
 
