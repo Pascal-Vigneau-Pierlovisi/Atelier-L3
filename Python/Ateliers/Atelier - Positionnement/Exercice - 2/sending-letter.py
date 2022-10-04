@@ -1,5 +1,3 @@
-#Pascal, Python 3.10 | Développé le 7 Septembre 2022 sous l'IDE Pycharm
-
 # Liste de lieu de livraison zone OM1
 OM1 = ["Guyane", "Guadeloupe", "Martinique", "La Réunion", "St Pierre et Miquelon", "St Barthélémy", "St-Martin et Mayotte"]
 

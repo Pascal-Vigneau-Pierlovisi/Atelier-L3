@@ -82,7 +82,7 @@ def verif_parenthese(expression:str) -> bool:
     est_correct = True
     limit = 0 # Compteur pour les différentes vérifications à faire
     stock_expression = [] # liste pour stocker l'expression et pouvoir travailler dessus
-    
+
     # Vérification pour voir que tous les caractères de l'expression sont bons
     while est_correct and limit < len(expression) - 1:
         if not caractere_valide(expression[limit]):
@@ -156,7 +156,7 @@ if __name__ == '__main__':
     print(caractere_valide(" "))
     # Test fonction verif_parenthese()
     print("----------------")
-    print(verif_parenthese("(2+2) + {2")) # Test dans le cas où { n'a pas sa fermeture
+    print(verif_parenthese("(2+2) + (2")) # Test dans le cas où { n'a pas sa fermeture
     print(verif_parenthese("(2+2) + 2")) # Test validé
 
 

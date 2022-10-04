@@ -5,7 +5,7 @@ from random import randint
 def gen_list_random_int(int_nbr: int = 10, int_binf: int = 0, int_bsup: int = 10):
     """
     La fonction gen_list_random_int() permet de générer int_nbr entiers compris entre int_binf et int_bsup
-    par défaut, les valeurs sont de 10 entiers compris entre 0 et 10
+    par défaut, les valeurs sont de 10 entiers compris entre 0 et 10 exclu
 
     :param int_nbr(int): Représente le nombre de nombres qui vont être générés. Par défaut 10
     :param int_binf(int): Représente un entier qui va être pris pour générer aléatoirement une liste d'entier
@@ -26,5 +26,5 @@ def gen_list_random_int(int_nbr: int = 10, int_binf: int = 0, int_bsup: int = 10
 if __name__ == '__main__':
     # Test de la fonction gen_list_random_int()
     print("---------------")
-    print(gen_list_random_int())  # Test de la fonction sans aucun paramètre
+    print(gen_list_random_int(3, 10, 100))  # Test de la fonction sans aucun paramètre
 

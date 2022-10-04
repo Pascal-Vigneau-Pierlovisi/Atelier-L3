@@ -23,9 +23,6 @@ def separer(L:list)->list:
 
     return liste
 
-
-
-
 if __name__ == '__main__':
     # Initialisation de la liste L
     L = [-1, 2, 10, 0, -2, 0, 4, - 199, 0, 10]

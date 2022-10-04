@@ -41,18 +41,13 @@ def commence_par(mot:str, prefixe:str) -> bool:
 
     :param mot(str): Représente le mot que l'on va tester
     :param prefixe(str): Représente le préfixe qui va être utilisé pour être comparé avec le mot
-    :return commence(bool): La valeur de retour est un booléen qui permet de savoir si le mot commence par prefixe
+    :return: La valeur de retour est un booléen qui permet de savoir si le mot commence par prefixe
     """
-
-    commence = False
 
     mot = mot.capitalize() # Je préfère mettre une majuscule au début du mot et du préfixe pour que le test soit uniforme
     prefixe = prefixe.capitalize()
 
-    if mot[:len(prefixe)] == prefixe:
-        commence = True
-
-    return commence
+    return mot[:len(prefixe)] == prefixe
 
 def finit_par(mot:str, suffixe:str) -> bool:
     """
@@ -60,18 +55,12 @@ def finit_par(mot:str, suffixe:str) -> bool:
 
     :param mot(str): Représente le mot
     :param suffixe(str): Représente le suffixe
-    :return finit(bool): La valeur de retour est un booléen True | False qui représente la présence de suffixe dans mot
+    :return: La valeur de retour est un booléen True | False qui représente la présence de suffixe dans mot
     """
-
     mot = mot.lower()
     suffixe = suffixe.lower()
 
-    finit = False
-
-    if mot[len(mot)-len(suffixe):len(mot)] == suffixe:
-        finit = True
-
-    return finit
+    return mot[len(mot)-len(suffixe):len(mot)] == suffixe
 
 def finissent_par(lst_mot:list, suffixe:str) -> list:
     """
@@ -167,6 +156,7 @@ if __name__ == '__main__':
     print(liste_mots(lst_mot, "pou", "oir", 7))
     print(test_function(liste_mots([], "pou", "oir", 6), 1)) # Test récupération liste avec une liste vide
     # Test affichage mots présents dans un fichier
+    print("-----------------------------")
     print(dictionnaire("littre.txt"))
 
 

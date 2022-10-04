@@ -113,7 +113,7 @@ def select_word(sorted_words:dict, word_len:int)->str:
 def runGame() -> None:
     """
     La procédure runGame() permet de lancer le jeu
-    :return: Aucune valeur de retour c'est une prodédure qui permet le lancement du jeu
+    :return: Aucune valeur de retour c'est une procédure qui permet le lancement du jeu
     """
     liste_mot_possible = build_list("capitales_pays.txt") # Création de la premiere liste sans niveau
     liste_mot_possible = build_dict(liste_mot_possible) # Trie des mots en fonction de la difficulté

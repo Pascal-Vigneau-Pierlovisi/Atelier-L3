@@ -170,14 +170,14 @@ if __name__ == '__main__':
     print("4 est présent dans LISTE : ", present(LISTE, 4))
     print("5 est présent dans LISTE : ", present(LISTE, 5))
     # Test de la fonction de test
-    print("-----------------------------")
+    print("---------------P1--------------")
     test_present(present4([], 2), "test liste vide", 2)
     test_present(present4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0), "test debut", 1)
     test_present(present4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5), "test milieu", 1)
     test_present(present4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 10), "test fin", 1)
     test_present(present4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 11), "test absence", 2)
     # Partie 2
-    print("-----------------------------")
+    print("--------------P2---------------")
     test_pos(pos4([], 1), "test liste vide", 2)
     test_pos(pos4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 0), "test debut", 1)
     test_pos(pos4([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5), "test milieu", 1)
