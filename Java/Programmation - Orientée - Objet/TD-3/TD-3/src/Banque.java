@@ -14,9 +14,9 @@ public class Banque {
         }
     }
 
-    public static void main(String[] args) throws RetraitException {
+    /*public static void main(String[] args) throws RetraitException {
         Banque monCompte = new Banque(1000);
         monCompte.retrait(50);
         monCompte.retrait(1000);
-    }
+    }*/
 }
