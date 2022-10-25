@@ -5,3 +5,4 @@ Les différents langages explorés durant cette année :
 - Java
 - JavaScript
 - PHP
+- C
