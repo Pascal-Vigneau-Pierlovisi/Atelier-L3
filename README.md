@@ -1,5 +1,5 @@
 # Atelier L3
 
-Vous pourrez retrouver ici tous les exercices fait en début d'année de L3.
+Matière : Atelier L3
 
-Le langage de ce cours est le Python
+Tous les exercices sont fait en Python
