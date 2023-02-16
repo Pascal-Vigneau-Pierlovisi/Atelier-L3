@@ -1,3 +1,0 @@
-/Users/pascalvigneau/Desktop/L3/Programmation - Impérative - avancée/C/TD-1/cmake-build-debug/CMakeFiles/TD_1.dir
-/Users/pascalvigneau/Desktop/L3/Programmation - Impérative - avancée/C/TD-1/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/pascalvigneau/Desktop/L3/Programmation - Impérative - avancée/C/TD-1/cmake-build-debug/CMakeFiles/rebuild_cache.dir
