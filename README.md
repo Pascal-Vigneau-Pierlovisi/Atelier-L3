@@ -1,8 +1,4 @@
-# L3 - Corte
+# Atelier L3
 
-Les différents langages explorés durant cette année :
-- Python
-- Java
-- JavaScript
-- PHP
-- C
+Vous pourrez retrouver ici tous les exercices fait en début d'année de L3.
+Le langage de ce cours est le Python
